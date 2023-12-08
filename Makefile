@@ -3,9 +3,8 @@ DOXYGEN = doxygen
 .PHONY: all clean
 .DEFAULT: all
 
-all: README.md OTHER.md doc/Doxyfile
-	@ cd doc; \
-	$(DOXYGEN)
+all: README.md doc/OTHER.md Doxyfile
+	$(DOXYGEN) Doxyfile
 
 clean:
-	rm -rf doc/out
+	rm -rf out
