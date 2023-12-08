@@ -9,7 +9,7 @@ QUIET                  = NO
 RECURSIVE              = YES
 
 # uncomment this one to have the hang/lock-up go away:
-EXCLUDE_PATTERNS       = */uber-long-file-path5/*
+# EXCLUDE_PATTERNS       = */uber-long-file-path5/*
 
 # ^^^ note that relative paths in doxygen appear b0rked as well, so we had to resort to using EXCLUDE_PATTERNS for this.:
 # https://stackoverflow.com/questions/5507055/excluding-directories-for-doxygen
