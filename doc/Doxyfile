@@ -1,5 +1,0 @@
-OUTPUT_DIRECTORY       = out
-INPUT                  = ../README.md ../OTHER.md
-USE_MDFILE_AS_MAINPAGE = ../README.md
-GENERATE_LATEX         = NO
-QUIET                  = YES

@@ -1,0 +1,20 @@
+OUTPUT_DIRECTORY       = out
+INPUT                  = doc/
+INPUT                  += uber-long-file-path1/
+INPUT                  += README.md
+INPUT                  += DOC2.md
+USE_MDFILE_AS_MAINPAGE = README.md
+GENERATE_LATEX         = NO
+QUIET                  = NO
+RECURSIVE              = YES
+
+# uncomment this one to have the hang/lock-up go away:
+EXCLUDE_PATTERNS       = */uber-long-file-path5/*
+
+# ^^^ note that relative paths in doxygen appear b0rked as well, so we had to resort to using EXCLUDE_PATTERNS for this.:
+# https://stackoverflow.com/questions/5507055/excluding-directories-for-doxygen
+# --> EXCLUDE doesn't 'stop' the recursive scan, while EXCLUDE_PATTERNS *does*:
+# quoting https://stackoverflow.com/questions/5507055/excluding-directories-for-doxygen#answer-55383829:
+# "As mentioned, exclude patterns will still consider the files in the directories[...]".  
+#      Yuk!   :-( 
+
